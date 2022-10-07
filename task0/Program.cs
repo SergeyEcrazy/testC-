@@ -9,7 +9,7 @@
 int Prompt(string message)
 {
     System.Console.Write(message);
-    string inputString = Console.ReadLine();
+    string inputString = (Console.ReadLine()?? "0");
     int value = Convert.ToInt32(inputString);
     return value;
 }
