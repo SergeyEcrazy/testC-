@@ -2,12 +2,11 @@
 максимального элемента, но больше всех остальных). Постарайтесь сделать одним циклом 
 [1, 3, 5, 6, 6, 4] -> 5 */
 
-Console.Clear();
 
 int InputNumber(string message)
 {
     System.Console.Write(message);
-    int number = int.Parse(System.Console.ReadLine());
+    int number = int.Parse(System.Console.ReadLine() ?? "0");
     return number;
 }
 

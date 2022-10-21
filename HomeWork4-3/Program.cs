@@ -1,12 +1,11 @@
 ﻿/* Напишите программу, которая задаёт массив из 8 случайных элементов и выводит их на экран.
 1, 2, 5, 7, 19, 6, 7, 8 */
 
-Console.Clear();
 
 int InputNumber(string message)
 {
     System.Console.Write(message);
-    int number = int.Parse(System.Console.ReadLine());
+    int number = int.Parse(System.Console.ReadLine() ?? "0");
     return number;
 }
 
