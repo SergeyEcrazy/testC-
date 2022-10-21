@@ -58,3 +58,5 @@ double[] myArray = CreateArray(5);
 PrintArray(myArray);
 System.Console.WriteLine($"{Max(myArray)} - {Min(myArray)} = {Difference(Min(myArray), Max(myArray))}");
 
+
+
