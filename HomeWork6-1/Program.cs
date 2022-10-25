@@ -6,7 +6,7 @@
 int InputNumber(string message)
 {
     System.Console.Write(message);
-    int number = int.Parse(Console.ReadLine());
+    int number = int.Parse(Console.ReadLine() ??"0");
     return number;
 }
 
@@ -16,7 +16,7 @@ int[] FillArray(int lenght)
     for (int i = 0; i < array.Length; i++)
     {
         Console.Write($"\nВведите значение индекса {i}:\t");
-        array[i] = int.Parse(Console.ReadLine());
+        array[i] = int.Parse(Console.ReadLine() ??"0");
     }
     return array;
 }
